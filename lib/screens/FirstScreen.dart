@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:myapp/screens/SecondScreen.dart';
+import 'package:myapp/screens/ValidatationScreen.dart';
 
 class FirstScreen extends StatefulWidget {
   FirstScreen({
@@ -32,7 +33,7 @@ class _FirstScreenState extends State<FirstScreen> {
                 style: ElevatedButton.styleFrom(primary: Color(0xff3C7C31)),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return SecondScreen();
+                    return ValidationScreen();
                   }));
                 },
                 child: Text("MY BUILDING")))
