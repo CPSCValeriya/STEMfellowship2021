@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/screens/SecondScreen.dart';
-import 'package:myapp/screens/ValidatationScreen.dart';
+import 'package:myapp/screens/ValidationScreen.dart';
 
 class DeciderScreen extends StatefulWidget {
   const DeciderScreen({Key? key}) : super(key: key);
