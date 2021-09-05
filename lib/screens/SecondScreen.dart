@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:location/location.dart';
 import 'package:myapp/charts/StackedAreaLine.dart';
 import 'package:myapp/data/SampleData.dart';
+import 'package:myapp/screens/BuildingUsageScreen.dart';
 import 'package:myapp/screens/MyUsageScreen.dart';
 
 class SecondScreen extends StatefulWidget {
@@ -42,7 +44,11 @@ class _SecondScreenState extends State<SecondScreen> {
             left: 80,
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(primary: Color(0xff3C7C31)),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return BuildingUsageScreen();
+                  }));
+                },
                 child: Text("BUILDING USAGE")))
       ]),
     );

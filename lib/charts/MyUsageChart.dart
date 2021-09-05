@@ -23,14 +23,16 @@ class MyUsageChart extends StatelessWidget {
     return new charts.BarChart(
       seriesList,
       animate: animate,
-      behaviors: [new charts.ChartTitle('kilowatt hours (kWh)',
-            behaviorPosition: charts.BehaviorPosition.start,
-            titleStyleSpec: charts.TextStyleSpec(fontSize: 11),
-            titleOutsideJustification: charts.OutsideJustification.middleDrawArea,)
+      behaviors: [
+        new charts.ChartTitle(
+          'kilowatt hours (kWh)',
+          behaviorPosition: charts.BehaviorPosition.start,
+          titleStyleSpec: charts.TextStyleSpec(fontSize: 11),
+          titleOutsideJustification: charts.OutsideJustification.middleDrawArea,
+        )
       ],
       barRendererDecorator: new charts.BarLabelDecorator<String>(),
       domainAxis: new charts.OrdinalAxisSpec(),
     );
   }
-
 }

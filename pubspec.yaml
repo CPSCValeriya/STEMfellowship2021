@@ -50,6 +50,8 @@ flutter:
   assets:
     - assets/screenOne.png
     - assets/screenTwo.png
+    - assets/Things_We_Can_Do_to_Help_the_Environment_9.png
+    - assets/3.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
