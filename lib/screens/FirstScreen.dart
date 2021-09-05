@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:myapp/screens/SecondScreen.dart';
 import 'package:myapp/screens/ValidationScreen.dart';
 

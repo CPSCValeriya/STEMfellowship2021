@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/charts/MyUsageChart.dart';
 import 'package:myapp/charts/StackedAreaLine.dart';
 import 'package:myapp/data/SampleData.dart';
 
@@ -19,7 +20,7 @@ class _MyUsageScreenState extends State<MyUsageScreen> {
           child: Container(
             height: MediaQuery.of(context).size.width,
             width: MediaQuery.of(context).size.width,
-            child: StackedAreaLineChart(createSampleData(), animate: true),
+            child: MyUsageChart(createSampleData(), animate: true),
           ),
         ),
       ),
