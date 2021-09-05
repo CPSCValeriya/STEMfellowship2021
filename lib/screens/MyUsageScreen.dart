@@ -32,6 +32,15 @@ class _MyUsageScreenState extends State<MyUsageScreen> {
             width: MediaQuery.of(context).size.width,
             child: MyUsageChart(createSampleData(), animate: true)
           ))),
+        Align(
+            alignment: Alignment(0,-0.8),
+            child:
+                Positioned(
+                    child: Text("MY USAGE",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 32, color: Color(0xff3C7C31), fontWeight: FontWeight.bold),)
+                )
+            )
       ],
       ),
       );
