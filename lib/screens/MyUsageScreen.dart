@@ -14,16 +14,26 @@ class _MyUsageScreenState extends State<MyUsageScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
+      body: Stack(children: [
+        Container(
+          decoration: BoxDecoration(
+          image: DecorationImage(
+          image: AssetImage("assets/Things_We_Can_Do_to_Help_the_Environment_9.png"),
+          fit: BoxFit.cover
+        ),
+       ),
+      ),
+        Positioned(
+          top: 220, left:5, right: 5,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
             height: MediaQuery.of(context).size.width,
             width: MediaQuery.of(context).size.width,
-            child: MyUsageChart(createSampleData(), animate: true),
-          ),
-        ),
+            child: MyUsageChart(createSampleData(), animate: true)
+          ))),
+      ],
       ),
-    );
+      );
   }
 }
